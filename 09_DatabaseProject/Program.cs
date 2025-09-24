@@ -30,7 +30,7 @@ namespace _09_DatabaseProject
             Console.WriteLine("--------------------------------");
 
 
-            SqlConnection connection = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;initial Catalog=EgitimKampiDb;integrated security=true");
+            SqlConnection connection = new SqlConnection("Data Source=SIZINSERVERADRESINIZ;initial Catalog=EgitimKampiDb;integrated security=true");
             connection.Open();
             SqlCommand command = new SqlCommand("Select * From TblCategory", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
